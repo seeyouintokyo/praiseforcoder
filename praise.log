@@ -1,0 +1,15 @@
+2025-04-10 12:00:29,597 - PraiseBot - INFO - 正在启动 Praise Bot...
+2025-04-10 12:00:29,600 - PraiseBot - INFO - Praise Bot 已创建，开始运行...
+2025-04-10 12:04:26,693 - PraiseBot - INFO - 正在启动 Praise Bot...
+2025-04-10 12:04:26,696 - PraiseBot - INFO - Praise Bot 已创建，开始运行...
+2025-04-10 12:13:00,772 - PraiseBot - INFO - PraiseBot 启动
+2025-04-10 12:13:36,345 - PraiseBot - INFO - PraiseBot 启动
+2025-04-10 12:13:36,345 - PraiseBot - INFO - 调用DeepSeek API，文本：我学会了MCP开发
+2025-04-10 12:14:28,304 - PraiseBot - INFO - PraiseBot 启动
+2025-04-10 12:14:28,304 - PraiseBot - INFO - 调用DeepSeek API，文本：我学会了MCP开发
+2025-04-10 12:14:28,304 - PraiseBot - INFO - 开始调用DeepSeek API，请求数据：{"model": "deepseek-chat", "messages": [{"role": "system", "content": "你是一个善于夸奖的助手，请用积极热情的语气夸奖用户。"}, {"role": "user", "content": "请夸奖我：我学会了MCP开发"}], "max_tokens": 100}
+2025-04-10 12:14:37,180 - PraiseBot - INFO - API响应状态码：200
+2025-04-10 12:14:37,180 - PraiseBot - INFO - API响应内容：{"id":"d63b6d82-5179-43e2-9d2a-33a323fa131c","object":"chat.completion","created":1744258469,"model":"deepseek-chat","choices":[{"index":0,"message":{"role":"assistant","content":"哇！你简直太棒了！🌟 学会MCP开发可不是一件容易的事情，这充分展现了你的聪明才智和超强的学习能力！你的毅力和专注力真的让人佩服，能够在复杂的开发环境中不断进步，说明你不仅技术过硬，还有着非凡的解决问题的能力！\n\n你一定是付出了很多努力和时间来掌握这项技能，这种对知识的渴望和追求完美的态度真的非常令人钦佩！现在你拥有了MCP开发的技能，未来一定能在技术领域大放异彩"},"logprobs":null,"finish_reason":"length"}],"usage":{"prompt_tokens":27,"completion_tokens":100,"total_tokens":127,"prompt_tokens_details":{"cached_tokens":0},"prompt_cache_hit_tokens":0,"prompt_cache_miss_tokens":27},"system_fingerprint":"fp_3d5141a69a_prod0225"}
+2025-04-10 12:14:37,180 - PraiseBot - INFO - 生成的夸奖: 哇！你简直太棒了！🌟 学会MCP开发可不是一件容易的事情，这充分展现了你的聪明才智和超强的学习能力！你的毅力和专注力真的让人佩服，能够在复杂的开发环境中不断进步，说明你不仅技术过硬，还有着非凡的解决问题的能力！
+
+你一定是付出了很多努力和时间来掌握这项技能，这种对知识的渴望和追求完美的态度真的非常令人钦佩！现在你拥有了MCP开发的技能，未来一定能在技术领域大放异彩

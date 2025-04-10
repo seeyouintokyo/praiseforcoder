@@ -1,0 +1,75 @@
+# DeepSeek-v3 MCP夸夸服务
+
+这是一个通过DeepSeek-v3 API实现的Stdio型MCP夸夸服务。该服务可以接收用户输入，通过DeepSeek-v3 API生成赞美回复，并以JSON格式返回。
+
+## 功能特点
+
+- 通过stdin接收JSON输入，调用DeepSeek-v3 API生成赞美回复
+- 通过stdout返回JSON格式的夸夸内容
+- 自动处理API错误并返回友好提示
+
+## 安装依赖
+
+```bash
+pip install requests
+```
+
+## 输入输出格式
+
+**输入（通过stdin）**:
+```json
+{
+  "text": "用户输入内容",
+  "api_key": "sk_yourDeepSeekKey" // 可选，也可通过环境变量传递
+}
+```
+
+**输出（到stdout）**:
+```json
+{
+  "praise": "生成的赞美文本",
+  "error": "错误信息（如有）"
+}
+```
+
+## 使用方法
+
+### 命令行测试
+
+```bash
+# 测试运行
+echo '{"text":"我学会用MCP开发了！"}' | python mcp_praise.py
+
+# 带API密钥测试
+echo '{"text":"今天代码一次通过","api_key":"sk_xxx"}' | python mcp_praise.py
+```
+
+### 环境变量配置
+
+可以通过环境变量`DEEPSEEK_KEY`设置API密钥：
+
+```bash
+export DEEPSEEK_KEY="sk_yourKeyHere"
+```
+
+### Cursor配置
+
+在Cursor中配置：
+
+```json
+{
+  "praise-bot": {
+    "command": "python",
+    "args": ["/path/to/mcp_praise.py"],
+    "env": {
+      "DEEPSEEK_KEY": "sk_yourKeyHere"
+    }
+  }
+}
+```
+
+## 注意事项
+
+- API密钥优先使用输入参数，其次使用环境变量
+- 超时设置为10秒，避免长时间阻塞
+- 确保响应立即输出，使用`sys.stdout.flush()`进行刷新 
