@@ -240,7 +240,7 @@ python-dotenv    # 环境变量管理
       "command": "python路径",
       "args": ["服务脚本路径"],
       "env": {
-        "DEEPSEEK_API_KEY": "你的API密钥"
+        "DEEPSEEK_API_KEY": "${DEEPSEEK_KEY}"
       }
     }
   }

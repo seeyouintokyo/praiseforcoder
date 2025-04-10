@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "praise-bot": {
+      "command": "python",
+      "args": ["main.py"],
+      "env": {
+        "DEEPSEEK_API_KEY": "${DEEPSEEK_KEY}"
+      }
+    }
+  }
+} 
