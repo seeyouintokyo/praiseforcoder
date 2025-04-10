@@ -1,46 +1,16 @@
-# 程序员鼓励师 🩷🌟阿星
+Metadata-Version: 2.4
+Name: praise-service
+Version: 0.1.0
+Summary: MCP service for generating praise using DeepSeek API
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: httpx>=0.28.1
+Requires-Dist: mcp[cli]>=1.6.0
+Requires-Dist: python-dotenv>=1.1.0
 
-一个基于 DeepSeek API 的简单 MCP 服务，用于生成简短可爱的赞美语句。
+# DeepSeek-v3 MCP夸夸服务
 
-## 环境要求
-
-- Python 3.10+
-- DeepSeek API Key
-
-## 配置
-
-1. 确保 `.env` 文件中包含你的 DeepSeek API Key：
-```
-DEEPSEEK_API_KEY=your_api_key_here
-```
-
-## 启动服务
-
-有两种方式可以启动服务：
-
-1. 直接使用 Python 启动：
-```bash
-python main.py
-```
-
-2. 使用 MCP CLI 启动：
-```bash
-uv run mcp run main.py:server
-```
-
-## 注意事项
-
-- 服务启动后会自动注册到 Cursor
-- 无需额外配置，服务会自动在后台运行
-- 如果需要重启服务，先用 `pkill -f "python main.py"` 停止旧服务，再重新启动
-
-## 实现说明
-
-服务使用 FastMCP 实现，主要特点：
-- 使用 DeepSeek Chat 模型
-- 限制回复为单句、15字以内
-- 每句话都带 emoji
-- 保持简短有趣的风格
+这是一个通过DeepSeek-v3 API实现的Stdio型MCP夸夸服务。该服务可以接收用户输入，通过DeepSeek-v3 API生成赞美回复，并以JSON格式返回。
 
 ## 功能特点
 

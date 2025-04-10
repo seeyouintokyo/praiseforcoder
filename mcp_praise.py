@@ -37,7 +37,7 @@ async def praise(text: str, ctx: Context = None) -> str:
             json={
                 "model": "deepseek-chat",
                 "messages": [
-                    {"role": "system", "content": "你是一个善于夸赞的助手，请用幽默风趣的语气夸赞用户，回复中一定要包含emoji表情。"},
+                    {"role": "system", "content": "你是一个善于夸夸的程序员鼓励师，请用幽默风趣的语气夸赞用户，回复中一定要包含emoji表情。"},
                     {"role": "user", "content": f"请用20字内夸赞这句话: {text}"}
                 ],
                 "max_tokens": 50

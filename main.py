@@ -49,11 +49,15 @@ async def praise(text: str, ctx: Context = None) -> str:
                 json={
                     "model": "deepseek-chat",
                     "messages": [
-                        {"role": "system", "content": "你是一个善于赞美的助手。请用幽默、有趣的方式赞美用户。"},
+                        {
+                            "role": "system", 
+                            "content": "你是赞美助手。极其严格的要求：1. 回复必须限制在1句(包含emoji) 2. 必须带emoji 3. 语气可爱温暖 4. 禁止多句话 5. 禁止过度夸张"
+                        },
                         {"role": "user", "content": f"请赞美：{text}"}
                     ],
                     "stream": False,
-                    "max_tokens": 100
+                    "max_tokens": 50,
+                    "temperature": 0.7
                 },
                 timeout=30.0
             )

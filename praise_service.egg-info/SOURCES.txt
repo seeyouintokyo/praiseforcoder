@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+praise_service.egg-info/PKG-INFO
+praise_service.egg-info/SOURCES.txt
+praise_service.egg-info/dependency_links.txt
+praise_service.egg-info/requires.txt
+praise_service.egg-info/top_level.txt
